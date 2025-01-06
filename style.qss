@@ -1,0 +1,209 @@
+QMainWindow#MainWindow
+{
+    background-color:#333333;
+}
+QWidget#filterdockwidget
+{
+    background:#333333;
+    color:#02E000;
+}
+filterdockwidget#wid
+{
+    background:#333333;
+    color:#02E000;
+}
+FilterDockWidget1#fdw
+{
+    background:#333333;
+    color:#02E000;
+}
+QDockWidget#FilterdockWidget1
+{
+    background:#333333;
+    color:#02E000;
+}
+QTableView
+{
+    background:#333333;
+    color:#02E000;
+}
+QHeaderView
+{
+    background-color: #333333;
+}
+QHeaderView::section
+{
+    background-color: #333333;
+    color: #02E000;
+    border: none;
+}
+QTableView QTableCornerButton::section
+{
+    border: none;
+    background-color:#333333;
+}
+QPushButton {
+    background-color: #333333; /* 背景颜色 */
+    color: white;             /* 文字颜色 */
+    border: 2px solid #2980b9; /* 边框颜色 */
+    border-radius: 2px;       /* 圆角 */
+    padding: 2px;            /* 内边距 */
+    font-size: 13px;          /* 字体大小 */
+}
+
+QPushButton:hover {
+    background-color: #777777; /* 悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #1f77b4; /* 按下时背景颜色 */
+    border-color: #0f5b8e;     /* 按下时边框颜色 */
+}
+
+QPushButton:disabled {
+    background-color: #bdc3c7; /* 禁用时背景颜色 */
+    color: #7f8c8d;            /* 禁用时文字颜色 */
+    border: 2px solid #95a5a6; /* 禁用时边框颜色 */
+}
+QLineEdit {
+    background-color: #333333;         /* 背景颜色 */
+    border: 2px solid #385333;         /* 边框颜色 */
+    border-radius: 2px;             /* 圆角 */
+    padding: 2px;                   /* 内边距 */
+    color: #02E000;                    /* 文字颜色 */
+    font-size: 13px;                /* 字体大小 */
+}
+
+QLineEdit:focus {
+    border: 2px solid #3498db;      /* 获取焦点时边框颜色 */
+    background-color: #f0f8ff;     /* 获取焦点时背景颜色 */
+}
+QComboBox {
+    background-color: #333333;         /* 背景颜色 */
+    border: 1px solid #ccc;         /* 边框颜色 */
+    border-radius: 2px;             /* 圆角 */
+    padding: 2px;                   /* 内边距 */
+    color: #00e000;                    /* 文字颜色 */
+    font-size: 13px;                /* 字体大小 */
+}
+
+QComboBox::drop-down {
+    width: 15px;                    /* 下拉箭头宽度 */
+}
+
+QComboBox::down-arrow {
+
+}
+
+QComboBox QAbstractItemView {
+    border: 2px solid #ccc;         /* 下拉列表的边框颜色 */
+    selection-background-color: #333333; /* 选中项背景颜色 */
+    selection-color: white;         /* 选中项文字颜色 */
+}
+QLabel {
+    color: #00e000;                    /* 文字颜色 */
+    font-size: 13px;                /* 字体大小 */
+    background-color: #333333;      /* 背景颜色 */
+    border: 1px solid #ddd;         /* 边框颜色 */
+    border-radius: 2px;             /* 边框圆角 */
+    padding: 2px;                   /* 内边距 */
+}
+
+QLabel[alignment="center"] {
+    text-align: center;             /* 文本居中对齐 */
+}
+QToolButton {
+    background-color: #333333;      /* 背景颜色 */
+    border: 1px solid #ddd;         /* 边框颜色 */
+    border-radius: 2px;             /* 圆角 */
+    padding: 2px;                   /* 内边距 */
+}
+
+QToolButton::icon {
+    image: url(:/icons/tool_icon.png); /* 图标 */
+}
+
+QToolButton:hover {
+    background-color: #3498db;      /* 悬停背景颜色 */
+    border-color: #2980b9;          /* 悬停边框颜色 */
+}
+QTextEdit {
+    background-color: #333333;         /* 背景颜色 */
+    border: 2px solid #ccc;         /* 边框颜色 */
+    border-radius: 2px;             /* 圆角 */
+    padding: 2px;                   /* 内边距 */
+    color: #00e000;                    /* 文字颜色 */
+    font-size: 13px;                /* 字体大小 */
+}
+
+QTextEdit:focus {
+    border: 2px solid #3498db;      /* 获取焦点时边框颜色 */
+}
+
+QScrollBar:vertical {
+    background-color: #f0f0f0;      /* 垂直滚动条背景颜色 */
+}
+
+QScrollBar::handle:vertical {
+    background-color: #3498db;      /* 垂直滚动条滑块颜色 */
+    border-radius: 2px;             /* 滑块圆角 */
+}
+
+QToolBar {
+    background: #333333;            /* 背景颜色 */
+    border: 1px solid #ddd;         /* 边框颜色 */
+    border-radius: 2px;             /* 圆角 */
+}
+
+QToolBar QToolButton {
+    background: #333333;               /* 按钮背景颜色 */
+    border: 1px solid #ccc;         /* 按钮边框颜色 */
+    border-radius: 2px;             /* 按钮圆角 */
+    padding: 2px;                   /* 按钮内边距 */
+}
+
+QToolBar QToolButton:hover {
+    background: #00E000;            /* 按钮悬停背景颜色 */
+    color: white;                   /* 按钮悬停文字颜色 */
+}
+QMenu {
+    background: #333333;               /* 菜单背景颜色 */
+    border: 1px solid #ccc;         /* 菜单边框颜色 */
+    border-radius: 2px;             /* 圆角 */
+    padding: 2px;                   /* 内边距 */
+}
+
+QMenu::item {
+    padding: 5px 10px;              /* 菜单项内边距 */
+    border-radius: 2px;             /* 菜单项圆角 */
+}
+
+QMenu::item:selected {
+    background: #3498db;            /* 选中菜单项背景颜色 */
+    color: #00E000;                   /* 选中菜单项文字颜色 */
+}
+QDialog
+{
+    background-color:#333333;
+    color:#00e000
+}
+*
+{
+    background-color:#333333;
+    color:#00E000;
+    font-size:13px;
+}
+QToolBox
+{
+    color:#00e000;
+}
+QDockWidget
+{
+    background-color:#333333;
+    color:#00E000;
+}
+QDialog
+{
+    background-color:#333333;
+    color:#00E000;
+}
