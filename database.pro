@@ -4,14 +4,12 @@
 #
 #-------------------------------------------------
 
-QT += core gui
-QT += core sql
-QT += sql
+QT += core gui widgets testlib sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = database
-TEMPLATE = app
+TARGET = database_app
+TEMPLATE = lib
 
 DEFINES += QT_DEPRECATED_WARNINGS
 
@@ -50,7 +48,7 @@ SOURCES += \
         app/controller/websitecontroller.cpp \
         app/model/purchaseorder.cpp \
         app/model/review.cpp \
-        app/model/usercomment.cpp
+        app/model/usercomment.cpp \
 
 HEADERS += \
         app/view/pagingtoolpage.h \

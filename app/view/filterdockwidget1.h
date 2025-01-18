@@ -19,6 +19,7 @@ public:
 
 private:
     Ui::FilterDockWidget1 *ui;
+    friend class Login;
 
 public slots:
     void runSelf(QStringList fileds,bool type);

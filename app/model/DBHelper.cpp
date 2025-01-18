@@ -8,11 +8,9 @@ QSqlDatabase DBHelper::getConnection()
 {
     QString connection = "QMYSQL";
     QMutexLocker mutexLocker(&mutex);
-    if(QSqlDatabase::contains("e1"))
+    if(QSqlDatabase::contains("e1")) DBHelper::db = QSqlDatabase::database("e1", true);
+    else
     {
-        DBHelper::db = QSqlDatabase::database("e1");
-    }
-    else {
         DBHelper::db = QSqlDatabase::addDatabase(connection,"e1");
         DBHelper::db.setHostName("localhost");
         DBHelper::db.setDatabaseName("website");

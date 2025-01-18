@@ -29,6 +29,7 @@ private:
     void createConections();
     void createAnimations();
 
+    friend class Login;
 };
 
 #endif // MAINWINDOW_H

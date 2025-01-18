@@ -15,8 +15,8 @@ WebsiteController<T>::WebsiteController()
 template<typename T>
 WebsiteController<T>::~WebsiteController()
 {
-    delete websiteDao;
-    delete sWebsiteController;
+    //delete websiteDao;
+    //delete sWebsiteController;
 }
 template<typename T>
 WebsiteController<T>* WebsiteController<T>::get()

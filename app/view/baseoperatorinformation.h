@@ -55,6 +55,8 @@ private:
             WebsiteController<UserComment>*
         > websiteControll;
     QSqlRelationalTableModel* sqlTableModel;
+
+    friend class Login;
 };
 
 #endif // BASEOPERATORINFORMATION_H

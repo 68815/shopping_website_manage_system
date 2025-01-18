@@ -12,7 +12,7 @@ FilterDockWidget1::FilterDockWidget1(QWidget *parent) :
 
 FilterDockWidget1::~FilterDockWidget1()
 {
-    delete ui;
+    //delete ui;
 }
 void FilterDockWidget1::init()
 {

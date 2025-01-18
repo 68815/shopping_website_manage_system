@@ -22,6 +22,9 @@ private:
     Ui::filterdockwidget *ui;
     QMap<QString,int> qsti;
     bool type;
+    QString filePath;
+
+    friend class Login;
 signals:
     void preparedCompleteSIG();
 public slots:

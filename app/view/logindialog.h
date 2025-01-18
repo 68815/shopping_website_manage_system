@@ -24,6 +24,8 @@ public slots:
 private:
     Ui::LoginDialog *ui;
     bool poi;
+    friend class tst_webitetest;
+    friend class Login;
 protected:
     void done(int result);
 };

@@ -47,6 +47,7 @@ void MainWindow::init()
     static_cast<BaseOperatorInformation*>(ui->stackedWidget->widget(5))->init();
     createConections();
     ui->toolBox->setCurrentIndex(1);
+    ui->toolBox->setCurrentIndex(0);
 }
 void MainWindow::createActionsInMenubar()
 {

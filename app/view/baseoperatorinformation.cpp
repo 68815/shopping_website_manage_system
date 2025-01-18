@@ -59,8 +59,8 @@ void BaseOperatorInformation::initUI()
 }
 QMenu* BaseOperatorInformation::createContextMenu(QModelIndex model)
 {
-    QMenu* contextMenu = new QMenu();
-
+    QMenu* contextMenu = new QMenu("menu",this);
+    contextMenu->setObjectName("menu");
     QAction *action = new QAction("&删除当前行",contextMenu);
     action->setStatusTip("删除当前行");
     connect(action,&QAction::triggered,this,[this,model](){
@@ -125,14 +125,11 @@ void BaseOperatorInformation::deleteCurrentRow(int rowIndex)
         currentId = sqlTableModel->record(rowIndex).value(0).toInt();
         controller->deleteById(currentId);
     },websiteControll);
-    if(sqlTableModel)
-    {
-        sqlTableModel->removeRow(rowIndex);
-    }
+    if(sqlTableModel) sqlTableModel->removeRow(rowIndex);
 }
 void BaseOperatorInformation::updateRowWithDialog(QModelIndex modelItem)
 {
-    UpdateDataDialog* dialog = new UpdateDataDialog();
+    UpdateDataDialog* dialog = new UpdateDataDialog(this);
     dialog->setModelIndex(modelItem);
 }
 void BaseOperatorInformation::createConnections()

@@ -81,10 +81,13 @@ void filterdockwidget::setInfo(QStringList fields,bool type)
                 ui->gridLayout->addWidget(le,2,i);
             }
         }
-        QPushButton* pb_importFromExcel = new QPushButton();
+        QPushButton* pb_importFromExcel = new QPushButton(this);
+        pb_importFromExcel->setWindowTitle("从excel导入...");
         pb_importFromExcel->setText("从excel导入...");
         connect(pb_importFromExcel,&QPushButton::clicked,[this,fields](){
-            QString fileName = QFileDialog::getOpenFileName(this, tr("Open Excel File"), "", tr("Excel Files (*.xlsx *.xls)"));
+            QString fileName = QString();
+            if(nullptr == filePath || filePath == "") fileName = QFileDialog::getOpenFileName(this, tr("Open Excel File"), "", tr("Excel Files (*.xlsx *.xls)"));
+            else fileName = filePath;
             if (fileName.isEmpty()) return;
             QMessageBox *msgBox = new QMessageBox(this);
             msgBox->setStandardButtons(nullptr);msgBox->setWindowModality(Qt::NonModal);msgBox->setWindowFlags(msgBox->windowFlags()|Qt::FramelessWindowHint);
@@ -141,7 +144,7 @@ void filterdockwidget::setInfo(QStringList fields,bool type)
                     qd->setWindowTitle("预览");
                     qtv->resizeColumnsToContents();
                     qtv->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
-                    qd->show();
+                    qd->exec();
                 }
                 else msgBox->setText("数据不匹配");
             }

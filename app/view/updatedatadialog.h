@@ -26,6 +26,8 @@ private:
     Ui::UpdateDataDialog *ui;
 
     void onSelectionChanged(const QItemSelection &selected, const QItemSelection &deselected);
+
+    friend class Login;
 };
 
 #endif // UPDATEDATADIALOG_H
